@@ -1,0 +1,4 @@
+#Thu Jul 21 19:54:41 CST 2022
+tom=18
+rose=20
+jerry=19
