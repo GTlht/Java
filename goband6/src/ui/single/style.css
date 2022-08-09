@@ -1,0 +1,104 @@
+#button{
+-fx-border-width:1;
+  -fx-border-color:#757575;
+ -fx-background-size: 80 40;
+  -fx-text-fill: white;
+  -fx-font-position: left;
+-fx-font-family: "Arial Narrow"; 
+ -fx-font-weight: bold; 
+  -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+  -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+ 
+
+}
+#pane0{
+
+-fx-background-image: url("bg1.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:800 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane1{
+-fx-background-image: url("bg2.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:800 698;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane2{
+-fx-background-image: url("bg3.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:1000 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane3{
+-fx-background-image: url("bg4.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:1000 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane4{
+-fx-background-image: url("bg5.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:1000 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane5{
+-fx-background-image: url("bg6.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:1000 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane6{
+-fx-background-image: url("bg7.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:1000 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+#pane7{
+-fx-background-image: url("bg8.jpg");
+-fx-background-repeat: stretch;
+
+-fx-background-size:1000 660;
+
+-fx-background-position: left top;
+
+-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);  
+
+}
+
