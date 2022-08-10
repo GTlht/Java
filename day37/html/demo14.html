@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>包含选择器和子元素选择器</title>
+		<style>
+			/* b p {
+				color: red;
+			} */
+			
+			b > p {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<b>
+			<p>aaa</p>
+			<div>
+				<p>bbb</p>
+			</div>
+			ccc
+		</b>
+	</body>
+</html>
