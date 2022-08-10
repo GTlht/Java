@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>绝对定位</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			.aaa {
+				border: 1px solid red;
+				width: 200px;
+				height: 200px;
+				
+				position: relative;
+			}
+			
+			.bbb {
+				border: 1px solid black;
+				width: 100px;
+				height: 100px;
+				
+				position: absolute;
+				top: 20px;
+			}
+			
+			/* body {
+				border: 1px solid #9ACD32;
+			}
+			
+			html {
+				border: 1px solid goldenrod;
+			} */
+			
+			.ccc {
+				border: 1px solid yellowgreen;
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="aaa">
+			<div class="bbb"></div>
+			<div class="ccc"></div>
+		</div>
+	</body>
+</html>
