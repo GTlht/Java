@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>方法</title>
+		<script>
+			//方法作为对象的使用
+			function person() {
+				//arguments
+				//name
+			}
+			
+			//给person对象动态绑定name属性
+			person.uname = "tom";
+			//给person对象动态绑定age属性
+			person.age = 18;
+			
+			//给person对象动态绑定setter和getter
+			person.setUname = function(uname) {
+				this.uname = uname;
+			}
+			
+			person.setAge = function(age) {
+				this.age = age;
+			}
+			
+			person.getUname = function() {
+				return this.uname;
+			}
+			
+			person.getAge = function() {
+				return this.age;
+			}
+			
+			alert(person.uname + "..." + person.age);
+			
+			person.setUname("jerry");
+			person.setAge(19);
+			
+			alert(person.getUname() + "..." + person.getAge());
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
