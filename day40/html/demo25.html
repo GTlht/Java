@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js的事件处理</title>
+		<script>
+			//当页面加载完执行方法体中的内容
+			window.onload = function() {
+				//获取标签对象
+				var bt = document.getElementById("bt");
+				
+				//给bt对象动态绑定鼠标单击事件
+				bt.onclick = function() {
+					alert("臭不要脸");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点我啊" id="bt"/>
+	</body>
+</html>

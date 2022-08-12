@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>操作标签的文本数据</title>
+		<script>
+			//当页面加载完才会执行方法体中的内容
+			window.onload = function() {
+				//获取div标签对象
+				var div = document.getElementById("aaa");
+				
+				//获取div标签的文本数据
+				var str = div.innerHTML;
+				alert(str);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="aaa">约吗</div>
+	</body>
+</html>

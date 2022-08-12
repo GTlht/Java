@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>global对象</title>
+		<script>
+			var str = encodeURI("http://www.woniuxy.com?name=约吗");
+			alert(str);//http://www.woniuxy.com?name=%E7%BA%A6%E5%90%97
+			
+			var s = encodeURIComponent("http://www.woniuxy.com?name=约吗");
+			alert(s);
+			//http%3A%2F%2Fwww.woniuxy.com%3Fname%3D%E7%BA%A6%E5%90%97
+			
+			var s1 = decodeURIComponent(s);
+			alert(s1);//http://www.woniuxy.com?name=约吗
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

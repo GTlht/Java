@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面九九</title>
+		<script>
+			document.write("<table cellpadding='10' align='center'>");
+			for(var i = 1; i <= 9; i++) {
+				document.write("<tr>");
+				for(var j = 1; j <= i; j++) {
+					document.write("<td style='border: 1px solid red;'>");
+					document.write(j + "*" + i + "=" + (i*j));
+					document.write("</td>")
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
