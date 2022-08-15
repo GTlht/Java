@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>element对象</title>
+		<style>
+			.aaa {
+				border: 1px solid red;
+				width: 100px;
+				height: 100px;
+				color: yellowgreen;
+			}
+		</style>
+		<script>
+			function add() {
+				var div = document.getElementById("div");
+				div.setAttribute("class","aaa");
+			}
+			
+			function remove() {
+				var div = document.getElementById("div");
+				div.removeAttribute("class");
+			}
+			
+			function get() {
+				var div = document.getElementById("div");
+				var str = div.getAttribute("class");
+				alert(str);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div">约吗</div>
+		<input type="button" value="添加属性" onclick="add()">
+		<input type="button" value="删除属性" onclick="remove()">
+		<input type="button" value="获取属性" onclick="get()">
+	</body>
+</html>

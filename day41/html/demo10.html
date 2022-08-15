@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>history对象的方法和属性</title>
+		<script>
+			//到下一页
+			function aaa() {
+				//history.forward();
+				history.go(1);
+			}
+			
+			function find() {
+				alert(history.length);
+			}
+			
+			//到下下一页
+			function bbb() {
+				history.go(2);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="到下一页" onclick="aaa()">
+		<input type="button" value="查看浏览器页面的个数" onclick="find()">
+		<input type="button" value="到下下一页" onclick="bbb()"><br>
+		<a href="demo11.html">去demo11.html页面</a>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>location对象属性</title>
+		<script>
+			window.onload = function() {
+				var str = location.search;
+				//alert(str);//"?username=tom&password=123"
+				str = str.substring(1);
+				//alert(str);//"username=tom&password=123"
+				var strs = str.split("&");
+				//alert(strs);//strs = ["username=tom","password=123"]
+				for(var i in strs) {
+					//alert(strs[i]);//"username=tom","password=123"
+					var strs1 = strs[i].split("=");
+					//alert(strs1);
+					for(var j in strs1) {
+						alert(strs1[j]);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

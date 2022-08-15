@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js的样式操作</title>
+		<style>
+			.aaa {
+				border: 1px solid red;
+				font-size: 200px;
+				color: yellowgreen;
+			}
+		</style>
+		<script>
+			function aaa() {
+				var div = document.getElementsByTagName("div")[0];
+				div.setAttribute("class", "aaa");
+			}
+		</script>
+	</head>
+	<body>
+		<div>约吗</div>
+		<input type="button" value="添加样式" onclick="aaa()">
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>window对象_计时器</title>
+		<script>
+			var id;
+			window.onload = function() {
+				var open = document.getElementById("open");
+				var close = document.getElementById("close");
+				
+				open.onclick = function() {
+					//设置计时器
+					id = setTimeout("aaa()", 2000);
+				}
+				
+				close.onclick = function() {
+					//关闭计时器
+					clearTimeout(id);
+				}
+			}
+			
+			function aaa() {
+				alert("约吗");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="开启计时" id="open">
+		<input type="button" value="关闭计时" id="close">
+	</body>
+</html>

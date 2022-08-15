@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>window_计时器</title>
+		<script>
+			var id;
+			
+			function aaa() {
+				//设置计时器
+				//id = setInterval("alert('约吗')", 2000);
+				id = setInterval("ccc()", 2000);
+				//id = setInterval(ccc, 2000);
+			}
+			
+			function bbb() {
+				//关闭计时器
+				clearInterval(id);
+			}
+			
+			function ccc() {
+				alert("滚犊子");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="开始计时" onclick="aaa()">
+		<input type="button" value="关闭计时" onclick="bbb()">
+	</body>
+</html>

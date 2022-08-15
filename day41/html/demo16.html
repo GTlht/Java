@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>node对象</title>
+		<style>
+			div {
+				border: 1px solid red;
+				color: yellowgreen;
+				font-size: 200px;
+			}
+		</style>
+		<script>
+			function add() {
+				var div = document.createElement("div");
+				var text = document.createTextNode("约吗");
+				div.appendChild(text);
+				document.body.appendChild(div);
+			}
+			
+			function remove() {
+				/* var body = document.body;
+				var div = document.getElementsByTagName("div")[0];
+				body.removeChild(div); */
+				
+				var div = document.getElementsByTagName("div")[0];
+				div.parentNode.removeChild(div);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="添加元素" onclick="add()">
+		<input type="button" value="删除元素" onclick="remove()">
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>window对象_打开和关闭</title>
+		<script>
+			var win;
+			
+			function aaa() {
+				//打开一窗口
+				//open();
+				//win = open();
+				//win = open("http://www.woniuxy.com");
+				win = open("http://www.baidu.com");
+			}
+			
+			function bbb() {
+				win.close();
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="打开" onclick="aaa()" />
+		<input type="button" value="关闭" onclick="bbb()" />
+	</body>
+</html>

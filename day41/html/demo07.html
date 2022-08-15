@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>location对象的属性</title>
+		<script>
+			function aaa() {
+				var url = location.href;
+				alert(url);
+			}
+			
+			function bbb() {
+				location.href = "http://www.woniuxy.com";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="获取url" onclick="aaa()">
+		<input type="button" value="来蜗牛吧" onclick="bbb()">
+	</body>
+</html>
