@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>过时页面跳转</title>
+		<style>
+			div {
+				text-align: center;
+				font-size: 50px;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				//设置计时器
+				setInterval("change()", 1000);
+			}
+			
+			function change() {
+				var span = document.getElementById("span");
+				var num = span.innerHTML;
+				if(num == 1) {
+					//跳转页面
+					location.href = "http://www.woniuxy.com";
+					return;
+				}
+				num--;
+				span.innerHTML = num;
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<span style="color:red" id="span">5</span>秒后自动跳转到蜗牛学院...
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动态表格</title>
+		<script>
+			function add() {
+				//获取表格对象
+				var tab = document.getElementById("tab");
+				
+				tab.innerHTML += '<tr>' +
+									'<td>'+document.getElementById("number").value+'</td>' +
+									'<td>'+document.getElementById("name").value+'</td>' +
+									'<td><a href="javascript:void(0)" onclick="del(this)">删除</a></td>' +
+								  '</tr>';
+			}
+			
+			function del(obj) {
+				//obj -> a
+				//alert(obj.parentNode.parentNode.parentNode.parentNode);
+				var tbody = obj.parentNode.parentNode.parentNode;
+				var tr = obj.parentNode.parentNode;
+				tbody.removeChild(tr);
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			编号：<input type="text" id="number">&nbsp;&nbsp;&nbsp;
+			姓名：<input type="text" id="name">&nbsp;&nbsp;&nbsp;
+			<input type="button" value="添加" onclick="add()">
+		</center>
+		<br>
+		<br>
+		<br>
+		<table id="tab" align="center" border="1" cellspacing="0" cellpadding="30">
+			<caption>用户表</caption>
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>tom</td>
+				<td><a href="javascript:void(0)" onclick="del(this)">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>jerry</td>
+				<td><a href="javascript:void(0)" onclick="del(this)">删除</a></td>
+			</tr>
+		</table>
+	</body>
+</html>

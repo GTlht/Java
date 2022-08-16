@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>this那些事儿</title>
+		<script>
+			//alert(this);//[object Window]
+			
+			/* function aaa() {
+				alert(this);//[object Window]
+			}
+			
+			aaa(); */
+			
+			/* window.onload = function() {
+				alert(this);//[object Window]
+			} */
+			
+			/* function aaa() {
+				alert(this);//[object Window]
+			} */
+			
+			/* window.onload = function() {
+				var bt = document.getElementById("bt");
+				bt.onclick = function() {
+					alert(this);//[object HTMLInputElement]
+				}
+			} */
+			
+			/* function aaa(obj) {
+				alert(obj);//[object HTMLInputElement]
+			} */
+			
+			/* function aaa() {
+				alert(this);//[object Window]
+			} */
+			
+			function aaa(obj) {
+				alert(obj);
+			}
+		</script>
+	</head>
+	<body>
+		<!-- <input type="button" value="点我啊" onclick="aaa()"> -->
+		<!-- <input type="button" value="点我啊" id="bt"> -->
+		<!-- <input type="button" value="点我啊" onclick="aaa(this)"> -->
+		<!-- <a href="#" onclick="aaa()">点我啊</a> -->
+		<!-- <a href="#" onclick="aaa(this)">点我啊</a> -->
+		<!-- <a href="javascript:void(0)" onclick="aaa(this)">点我啊</a> -->
+		<a href="javascript:aaa(this)">点我啊</a>
+	</body>
+</html>

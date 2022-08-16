@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>复选框全选全不选</title>
+		<script>
+			window.onload = function() {
+				var all = document.getElementById("all");
+				all.onclick = function() {
+					//将其他的所有的复选框的状态改成和它一样即可
+					
+					//获取其他所有复选框对象
+					var cbs = document.getElementsByName("cb");
+					//遍历
+					for(var i in cbs) {
+						cbs[i].checked = all.checked;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table border="1" cellspacing="0" cellpadding="30" align="center">
+			<tr>
+				<th>
+					<input type="checkbox" id="all" />
+				</th>
+				<th>编号</th>
+				<th>姓名</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="cb"/>
+				</td>
+				<td>1</td>
+				<td>tom</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="cb"/>
+				</td>
+				<td>2</td>
+				<td>jerry</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" name="cb"/>
+				</td>
+				<td>3</td>
+				<td>rose</td>
+			</tr>
+		</table>
+	</body>
+</html>

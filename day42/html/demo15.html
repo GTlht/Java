@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>键盘事件</title>
+		<script>
+			/* function aaa() {
+				alert("约吗");
+			} */
+			
+			function aaa(obj) {
+				alert(obj.keyCode + "..." + String.fromCharCode(obj.keyCode));
+			}
+		</script>
+	</head>
+	<body>
+		<!-- <input type="text" onkeydown="aaa()"> -->
+		<!-- <input type="text" onkeypress="aaa()"> -->
+		<!-- <input type="text" onkeyup="aaa()"> -->
+		
+		<input type="text" onkeydown="aaa(event)">
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>动态表格</title>
+		<script>
+			function add() {
+				/*
+					<tr>
+						<td>2</td>
+						<td>jerry</td>
+						<td>删除</td>
+					</tr>
+				*/
+				
+				//创建tr
+				var tr = document.createElement("tr");
+				
+				//创建第一个td
+				var td_1 = document.createElement("td");
+				//创建第一个文本
+				var text_1 = document.createTextNode(document.getElementById("number").value);
+				//将第一个文本添加到第一个td中
+				td_1.appendChild(text_1);
+				//将第一个td添加到tr中
+				tr.appendChild(td_1);
+				
+				//创建第二个td
+				var td_2 = document.createElement("td");
+				//创建第二个文本
+				var text_2 = document.createTextNode(document.getElementById("name").value);
+				//将第二个文本添加到第二个td中
+				td_2.appendChild(text_2);
+				//将第二个td添加到tr中
+				tr.appendChild(td_2);
+				
+				//创建第三个td
+				var td_3 = document.createElement("td");
+				//创建a标签对象
+				var a = document.createElement("a");
+				//创建第三个文本
+				var text_3 = document.createTextNode("删除");
+				//将第三个文本添加到a中
+				a.appendChild(text_3);
+				//给a标签设置属性
+				a.setAttribute("href", "javascript:void(0)");
+				a.setAttribute("onclick", "del(this)");
+				//将a添加到第三个td中
+				td_3.appendChild(a);
+				//将第三个td添加到tr中
+				tr.appendChild(td_3);
+				
+				//获取table对象
+				var tab = document.getElementById("tab");
+				//将tr添加到表格中
+				tab.appendChild(tr);
+			}
+			
+			function del(obj) {
+				//obj -> a
+				//alert(obj.parentNode.parentNode.parentNode.parentNode);
+				var tbody = obj.parentNode.parentNode.parentNode;
+				var tr = obj.parentNode.parentNode;
+				tbody.removeChild(tr);
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			编号：<input type="text" id="number">&nbsp;&nbsp;&nbsp;
+			姓名：<input type="text" id="name">&nbsp;&nbsp;&nbsp;
+			<input type="button" value="添加" onclick="add()">
+		</center>
+		<br>
+		<br>
+		<br>
+		<table id="tab" align="center" border="1" cellspacing="0" cellpadding="30">
+			<caption>用户表</caption>
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>tom</td>
+				<td><a href="javascript:void(0)" onclick="del(this)">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>jerry</td>
+				<td><a href="javascript:void(0)" onclick="del(this)">删除</a></td>
+			</tr>
+		</table>
+	</body>
+</html>

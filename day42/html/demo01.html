@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>开光灯</title>
+		<script>
+			//开灯
+			function aaa() {
+				//获取标签对象
+				var img = document.getElementById("img");
+				
+				//改变src属性值
+				img.src = "../img/on.gif";
+			}
+			
+			//关灯
+			function bbb() {
+				//获取标签对象
+				var img = document.getElementById("img");
+				
+				//改变src属性值
+				img.src = "../img/off.gif";
+			}
+		</script>
+	</head>
+	<body>
+		<img src="../img/off.gif" id="img"/><br>
+		<input type="button" value="开灯" onclick="aaa()">
+		<input type="button" value="关灯" onclick="bbb()">
+	</body>
+</html>

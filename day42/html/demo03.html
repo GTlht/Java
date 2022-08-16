@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+		<script>
+			var count = 1;
+			
+			window.onload = function() {
+				//设置计时器
+				setInterval("change()", 2000);
+			}
+			
+			function change() {
+				if(count == 3) {
+					count = 0;
+				}
+				count++;
+				//获取标签对象
+				var img = document.getElementById("img");
+				//换src的值
+				img.src = "../img/"+count+".jpg";
+			}
+		</script>
+	</head>
+	<body>
+		<img src="../img/1.jpg" id="img"/>
+	</body>
+</html>

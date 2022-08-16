@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>焦点事件</title>
+		<script>
+			function aaa() {
+				var input = document.getElementById("input");
+				input.focus();
+			}
+			
+			function bbb() {
+				var input = document.getElementById("input");
+				input.blur();
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="input"><br>
+		<input type="button" value="获取焦点" onclick="aaa()">
+		<input type="button" value="失去焦点" onclick="bbb()">
+	</body>
+</html>

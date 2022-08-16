@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>开光灯</title>
+		<script>
+			var flag = false;//关灯
+			
+			//开灯或关灯
+			function change() {
+				//获取标签对象
+				var img = document.getElementById("img");
+				
+				if(flag) {
+					//关灯
+					img.src = "../img/off.gif";
+					
+					flag = false;
+				} else {
+					//开灯
+					img.src = "../img/on.gif";
+					
+					flag = true;
+				}	
+			}
+		</script>
+	</head>
+	<body>
+		<img src="../img/off.gif" id="img" onclick="change()"/>
+	</body>
+</html>
