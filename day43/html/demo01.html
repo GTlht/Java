@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二级联动</title>
+		<script>
+			var sichuan = ['成都', '绵阳', '眉山', '乐山', '自贡', '雅安'];
+			var hainan = ['海口', '三亚', '三沙', '儋州'];
+			
+			function aaa() {
+				var sheng = document.getElementById("sheng");
+				var city = document.getElementById("city");
+				city.innerHTML = "<option>--请选择所在城市--</option>";
+				
+				if(sheng.value == 'sichuan') {
+					//遍历四川的数组
+					for(var i in sichuan) {
+						var option = document.createElement("option");
+						var text = document.createTextNode(sichuan[i]);
+						option.appendChild(text);
+						city.appendChild(option);
+					}
+				} else if(sheng.value == 'hainan'){
+					//遍历海南的数组
+					for(var i in hainan) {
+						var option = document.createElement("option");
+						var text = document.createTextNode(hainan[i]);
+						option.appendChild(text);
+						city.appendChild(option);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<select onchange="aaa()" id="sheng">
+			<option value="">--请选择所在省份--</option>
+			<option value="sichuan">四川</option>
+			<option value='hainan'>海南</option>
+		</select>省
+		<select id="city">
+			<option>--请选择所在城市--</option>
+		</select>市
+	</body>
+</html>

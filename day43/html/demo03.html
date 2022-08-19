@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单校验</title>
+		<script>
+			function check() {
+				if(checkUsername() & checkPassword()) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			
+			function checkUsername() {
+				//获取用户名的标签对象
+				//获取value属性值
+				var username = document.getElementById("username").value;
+				var usernameSpan = document.getElementById("usernameSpan");
+				if(username) {
+					//可用
+					usernameSpan.innerHTML = "<font color='green'>用户名可用</font>";
+					return true;
+				} else {
+					//不可用
+					usernameSpan.innerHTML = "<font color='red'>用户名不能为空</font>";
+					return false;
+				}
+			}
+			
+			function checkPassword() {
+				//获取密码的标签对象
+				//获取value属性值
+				var password = document.getElementById("password").value;
+				var passwordSpan = document.getElementById("passwordSpan");
+				if(password) {
+					//可用
+					passwordSpan.innerHTML = "<font color='green'>密码可用</font>";
+					return true;
+				} else {
+					//不可用
+					passwordSpan.innerHTML = "<font color='red'>密码不能为空</font>";
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="success.html" method="get" onsubmit="return check()">
+			用户名：<input type="text" name="username" id="username" onblur="checkUsername()"><span id="usernameSpan"></span><br>
+			密码：<input type="password" name="password" id="password" onblur="checkPassword()"><span id="passwordSpan"></span><br>
+			<input type="submit" value="注册"/>
+		</form>
+	</body>
+</html>

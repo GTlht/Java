@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>各行换色</title>
+		<script>
+			window.onload = function() {
+				var trs = document.getElementsByTagName("tr");
+				
+				for(var i = 1; i < trs.length; i++) {
+					var tr = trs[i];
+					
+					tr.onmouseover = function() {
+						this.style.backgroundColor = "gold";
+					}
+					
+					if(i % 2 == 0){
+						tr.style.backgroundColor = "yellow";
+						tr.onmouseout = function() {
+							this.style.backgroundColor = "yellow";
+						}
+					} else {
+						tr.style.backgroundColor = "yellowgreen";
+						tr.onmouseout = function() {
+							this.style.backgroundColor = "yellowgreen";
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table align="center" border="1" cellspacing="0" cellpadding="30">
+			<tr>
+				<th>编号</th>
+				<th>姓名</th>
+				<th>年龄</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>tom</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>jerry</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>rose</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>jack</td>
+				<td>23</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>tony</td>
+				<td>28</td>
+			</tr>
+		</table>
+	</body>
+</html>
