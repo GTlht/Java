@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shiporder xmlns="http://www.woniu.com"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://www.woniu.com shiporder.xsd"
+		  orderid="9527">
+	<orderperson1></orderperson1>
+	<shipto>
+		<name>aaa</name>
+		<address>aaa</address>
+		<city>aaa</city>
+		<country>aaa</country>
+	</shipto>
+	<item>
+		<title>aaa</title>
+		<note>aaa</note>
+		<quantity>1</quantity>
+		<price>11</price>
+	</item>
+</shiporder>

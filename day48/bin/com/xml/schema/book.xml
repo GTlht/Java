@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<书架 xmlns="http://www.woniu.com"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.woniu.com book.xsd">
+	 <书>
+	 	<书名>金瓶梅</书名>
+	 	<作者>笑笑</作者>
+	 	<售价>12.8</售价>
+	 </书>
+</书架>
